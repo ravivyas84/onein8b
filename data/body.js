@@ -101,7 +101,7 @@
     q("blush-easily", "😳", "Do you blush easily?", 0.25, "low", null, "Rough global estimate"),
     q("ticklish-feet", "🪶", "Are your feet ticklish?", 0.6, "low", null, "Rough global estimate"),
     q("sneeze-multiple", "🤧", "Do you almost always sneeze more than once in a row?", 0.4, "low", null, "Rough estimate from informal surveys"),
-    q("crack-knuckles", "🎋", "Can you crack your knuckles?", 0.6, "low", null, "Rough global estimate"),
+    q("crack-knuckles", "🎋", "Can you crack your knuckles?", 0.6, "low", "knuckle-cracking", "Rough global estimate"),
     q("born-with-hair", "👶", "Were you born with a full head of hair?", 0.3, "low", null, "Rough estimate; skip if you don't know"),
     q("sit-cross-legged", "🧘", "Can you sit cross-legged on the floor comfortably?", 0.7, "low", null, "Floor-sitting is the norm across much of the world"),
     q("deep-squat", "🏋️", "Can you rest in a deep squat with your heels flat on the ground?", 0.4, "low", null, "Everyday resting posture in much of Asia; harder where chairs rule"),
