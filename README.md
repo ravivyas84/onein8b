@@ -13,6 +13,9 @@ small enough number and you're officially (well, playfully) one of a kind.
 > answer as independent, which real life is not, and many percentages are
 > estimates. That's the fun, not the flaw.
 
+The full model — why multiplication works, bits and entropy, correlation
+groups, a worked playthrough — is written up in **[MATH.md](MATH.md)**.
+
 ## The question bank
 
 The bank lives in [`data/`](data/) as plain JS files — no build step. Each file
