@@ -103,9 +103,26 @@ high+medium subset must reach 1 on its own. Run it after any edit to `data/`.
 3. Adjust that category's target in `tools/validate.mjs` (`TARGETS`) and run
    the validator.
 
-## Site (stage 2)
+## The site
 
-The quiz itself — a zero-dependency static page (`index.html` + `styles.css` +
-`app.js`) with an animated counter, adaptive question selection, journey recap
-and share button — deploys on **Netlify or Vercel** with no configuration:
-connect the repo, framework preset "none", publish directory `/` (root).
+A zero-dependency static page: `index.html` + `styles.css` + `app.js` +
+`comparisons.js`. The engine picks big trustworthy cuts first, mixes in the
+long tail mid-game, switches to high-confidence near-50/50 "precision cutters"
+once the count drops under 100,000, and finishes when the count falls below
+1,000 (or hits 1 — the golden ending), when questions run out, or when you tap
+*reveal my result* (offered after 10 answers). Yes/No/Skip also answer to the
+<kbd>Y</kbd>/<kbd>N</kbd>/<kbd>S</kbd> keys; skipping never counts against you.
+
+Run it locally:
+
+```sh
+python3 -m http.server   # then open http://localhost:8000
+```
+
+Deploys on **Netlify or Vercel** with no configuration: connect the repo,
+framework preset "none", build command empty, publish directory `/` (root).
+
+### Future ideas
+
+Dynamic share images, result permalinks, localization, an in-site sources page,
+and a "compare with a friend" mode.

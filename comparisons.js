@@ -1,0 +1,28 @@
+// Fun comparisons for the results screen: the first entry whose `min` is
+// at or below the final count supplies the phrase.
+globalThis.COMPARISONS = [
+  { min: 7e9, text: "basically everyone on Earth" },
+  { min: 1.4e9, text: "about the population of China" },
+  { min: 7.4e8, text: "more people than all of Europe" },
+  { min: 3.4e8, text: "about the population of the United States" },
+  { min: 2.1e8, text: "about the population of Brazil" },
+  { min: 1.2e8, text: "about the population of Japan" },
+  { min: 8.4e7, text: "about the population of Germany" },
+  { min: 3.9e7, text: "about the population of California" },
+  { min: 2e7, text: "about the population of Mumbai" },
+  { min: 9e6, text: "about the population of London" },
+  { min: 4e6, text: "about the population of Los Angeles" },
+  { min: 1e6, text: "a whole million-person city of people just like you" },
+  { min: 380000, text: "about the population of Iceland" },
+  { min: 100000, text: "a sold-out music festival" },
+  { min: 75000, text: "a packed stadium" },
+  { min: 15000, text: "a full arena" },
+  { min: 5000, text: "a small town" },
+  { min: 800, text: "a village" },
+  { min: 400, text: "one jumbo jet" },
+  { min: 80, text: "a wedding party" },
+  { min: 40, text: "a school bus" },
+  { min: 11, text: "a football team" },
+  { min: 2, text: "you and a handful of strangers scattered across the planet" },
+  { min: 0, text: "just you" },
+];

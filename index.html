@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One in 8 Billion — how rare are you?</title>
+  <meta name="description" content="Answer yes/no questions and watch 8,000,000,000 shrink down to the number of people on Earth who are just like you.">
+  <meta property="og:title" content="One in 8 Billion">
+  <meta property="og:description" content="How many people on Earth are like you? Answer yes/no questions and find out.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e0f13">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- start screen -->
+    <section id="start-screen">
+      <h1>One in <span class="accent">8 Billion</span></h1>
+      <p class="premise">There are</p>
+      <div class="big-number" id="start-counter">8,000,000,000</div>
+      <p class="premise">people on Earth. Every yes-or-no answer cuts away everyone
+        who answered differently. How few is <em>you</em>?</p>
+      <button class="primary" id="start">Find out</button>
+    </section>
+
+    <!-- quiz screen -->
+    <section id="quiz" hidden>
+      <div class="counter-wrap">
+        <div class="big-number" id="counter" aria-live="polite">8,000,000,000</div>
+        <p class="counter-label">people like you, so far</p>
+      </div>
+      <div class="card" id="question-card">
+        <div class="q-emoji" id="q-emoji">🌍</div>
+        <p class="q-text" id="q-text">…</p>
+        <div class="answers">
+          <button class="primary" id="yes">Yes</button>
+          <button class="primary" id="no">No</button>
+          <button class="ghost" id="skip">Skip</button>
+        </div>
+        <p class="q-count" id="q-count"></p>
+        <button class="link" id="reveal" hidden>I'm done — reveal my result</button>
+      </div>
+    </section>
+
+    <!-- results screen -->
+    <section id="results" hidden>
+      <p class="counter-label" id="result-count"></p>
+      <h2 id="result-headline"></h2>
+      <p class="subline" id="result-subline"></p>
+      <p class="comparison" id="result-comparison"></p>
+      <div class="actions">
+        <button class="primary" id="share">Share your number</button>
+        <button class="ghost" id="play-again">Play again</button>
+      </div>
+      <h3>Your journey from 8,000,000,000</h3>
+      <ul id="journey"></ul>
+    </section>
+  </main>
+
+  <footer>
+    Statistically flavored entertainment, not a census — answers are treated as
+    independent and many percentages are estimates.
+    <a href="https://github.com/ravivyas84/onein8b">About the numbers</a>
+  </footer>
+
+  <script src="comparisons.js"></script>
+  <script src="data/beliefs.js"></script>
+  <script src="data/body.js"></script>
+  <script src="data/calendar.js"></script>
+  <script src="data/demographics.js"></script>
+  <script src="data/family.js"></script>
+  <script src="data/food.js"></script>
+  <script src="data/habits.js"></script>
+  <script src="data/health.js"></script>
+  <script src="data/home.js"></script>
+  <script src="data/names.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/tech.js"></script>
+  <script src="data/travel.js"></script>
+  <script src="data/work.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
